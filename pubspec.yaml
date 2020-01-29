@@ -86,5 +86,10 @@ flutter:
     - assets/img/moon.png
     - assets/img/earth.png
     - assets/img/mercury.png
+    - assets/img/venus.png
+    - assets/img/jupiter.png
+    - assets/img/saturn.png
+    - assets/img/uranus.png
+    - assets/img/pluto.png
     - assets/img/ic_distance.png
     - assets/img/ic_gravity.png
