@@ -3,6 +3,7 @@ import 'package:planets/models/planets.dart';
 import 'package:planets/text_style.dart';
 import 'package:planets/ui/common/plannet_summary.dart';
 import 'package:planets/ui/common/separator.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({Key key, this.planet}) : super(key: key);
@@ -28,8 +29,8 @@ class DetailPage extends StatelessWidget {
 
   Container _getBackground() {
     return new Container(
-      child: new Image.network(
-        planet.picture,
+      child: new CachedNetworkImage(
+        imageUrl: planet.picture,
         fit: BoxFit.cover,
         height: 300.0,
       ),
